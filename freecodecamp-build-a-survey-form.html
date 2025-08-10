@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Feedback Form</h1>
+    <p id="description">Please fill out this short survey so we can improve your experience.</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="ex. Juan DC" required>
+
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="ex. juandc@gmail.com" required>
+
+            <label id="number-label" for="number">Age</label><br />
+      <input
+        id="number"
+        name="age"
+        type="number"
+        placeholder="Enter your age"
+        min="1"
+        max="120"
+      >
+
+
+      <div>
+
+      <label for="dropdown">How did you hear about us?</label><br />
+      <select id="dropdown" name="referrer" required>
+        <option value="">-- Select an option --</option>
+        <option value="social">Social media</option>
+        <option value="friend">Friend or family</option>
+        <option value="search">Search engine</option>
+      </select>
+    </div>
+
+      <fieldset>
+      <legend>How often do you visit our site?</legend>
+      <label>
+        <input type="radio" name="frequency" value="daily" required />
+        Daily
+      </label>
+      <label>
+        <input type="radio" name="frequency" value="weekly" />
+        Weekly
+      </label>
+      <label>
+        <input type="radio" name="frequency" value="monthly" />
+        Monthly
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>How often do you visit our site?</legend>
+      <label>
+        <input type="radio" name="frequency" value="daily" required />
+        Daily
+      </label>
+      <label>
+        <input type="radio" name="frequency" value="weekly" />
+        Weekly
+      </label>
+      <label>
+        <input type="radio" name="frequency" value="monthly" />
+        Monthly
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What features do you use? (select all that apply)</legend>
+      <label>
+        <input type="checkbox" name="features" value="search" />
+        Search
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="profiles" />
+        Profiles
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="comments" />
+        Comments
+      </label>
+    </fieldset>
+
+    <label for="comments">Additional comments</label><br />
+      <textarea id="comments" name="comments" rows="4" placeholder="Write any other feedback here..."></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+
+    </form>
+  </body>
+</html>
